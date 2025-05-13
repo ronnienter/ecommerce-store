@@ -3,8 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const productRoutes = require('./routes/ProductRoutes');
-
-// ... existing code ...
+const userRoutes = require('./routes/userRoutes');
 
 // Load environment variables
 dotenv.config();
@@ -20,6 +19,7 @@ app.use(cors());
 
 // Routes
 app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
