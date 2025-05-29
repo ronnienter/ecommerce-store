@@ -1,8 +1,0 @@
-feat: Add admin features and order management
-
-- Add isAdmin field to User model
-- Implement admin-only order status updates
-- Remove duplicate order status route
-- Add order status validation
-- Update order status timestamps
-- Implement admin authorization checks
