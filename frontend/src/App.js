@@ -5,8 +5,10 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
 import './App.css';
 import DashboardPage from './pages/admin';
+import AuthPage from './pages/AuthPage';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/product/:id" element={<ProductPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/admin/dashboard" element={<DashboardPage />} />
+            <Route path="/auth" element={<AuthPage />} />
           </Routes>
         </main>
         <Footer />

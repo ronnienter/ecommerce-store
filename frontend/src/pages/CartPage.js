@@ -91,11 +91,12 @@ const CartPage = () => {
               <p className="text-xl font-bold">Total: ${total.toFixed(2)}</p>
             </div>
             <div>
-              <button 
+              <Link 
+                to="/checkout"
                 className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600"
               >
                 Proceed to Checkout
-              </button>
+              </Link>
             </div>
           </div>
         </>
